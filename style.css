@@ -1,0 +1,51 @@
+
+@font-face {
+    font-family: "MedievalSharp";
+    src: url('/fonts/MedievalSharp/MedievalSharp-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background: url("/img/Login_background_default.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-top: 7rem;
+}
+form {
+    /* Center the form on the page */
+    margin: 0 auto;
+    width: 500px;
+    /* Form outline */
+    padding: 1em;
+    border: 4px solid rgb(0, 0, 0);
+    border-radius: 1em;
+    background-color: rgb(250, 235, 215, 0.3);
+
+}
+
+legend {
+
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "MedievalSharp";
+
+}
+
+select {
+    font: 12px sans-serif;
+
+    /* Uniform text field size */
+    width: 300px;
+    box-sizing: border-box;
+    margin: 10px;
+  
+    /* Match form field borders */
+    border: 1px solid #999;
+}
+
+
+
+/* playing around */
+  
+ 

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Automated Report Machine!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+    <form action="/index.html" method="post">
+ 
+        <!-- Abstract/Introduction/Summary and Recommendations -->
+
+        <legend>Abstract/Introduction/Field and Lab Methods/Summary and Recommendations</legend>
+        <select name="cell_tower_AISR" id="cell_tower_AISR">Cell Tower Report</select>
+        <select name="generic_AISR" id="generic_AISR">Generic Report</select>
+
+<!-- Environmental Setting-->
+        <fieldset>
+        <legend>Environmental Setting</legend>
+
+   
+            <select name="Ecoregions" id="ecoregions">
+                <optgroup label="South Central Plains">
+                    <option value="35a">Tertiary Uplands</option>
+                    <option value="35b">Floodplains and Low Terraces</option>
+                    <option value="35c">Pleistocene Fluvial Terraces</option>
+                    <option value="35d">Cretaceous Dissected Uplands</option>
+                    <option value="35g">Red River Bottomlands</option>
+                    <option value="35h">Blackland Prairie</option>
+                </optgroup>
+                <optgroup label="Ouachita Mountains">
+                    <option value="36a">Athens Plateau</option>
+                    <option value="36b">Central Mountain Ranges</option>
+                    <option value="36c">Central Hills, Ridges, and Valleys</option>
+                    <option value="36d">Fourche Mountains</option>
+                    <option value="36e">Western Ouachitas</option>
+                </optgroup>
+                <optgroup label="Arkansas Valley">
+                    <option value="37a">Scattered High Ridges and Mountains</option>
+                    <option value="37b">Arkansas River Floodplain</option>
+                    <option value="37d">Arkansas Valley Hills</option>
+                    <option value="37e">Arkansas Valley Plains</option>
+                </optgroup>
+                <optgroup label="Boston Mountains">
+                    <option value="38a">Upper Boston Mountains</option>
+                    <option value="38b">Lower Boston Mountains</option>
+                </optgroup>
+                <optgroup label="Ozark Highlands">
+                    <option value="39a">Springfield Plateau</option>
+                    <option value="39b">Dissected Springfield Plateau–Elk River Hills</option>
+                    <option value="39c">White River Hills</option>
+                    <option value="39d">Central Plateau</option>
+                </optgroup>
+                <optgroup label="Mississippi Alluvial Plain">
+                    <option value="73a">Northern Holocene Meander Belts</option>
+                    <option value="73b">Northern Pleistocene Valley Trains</option>
+                    <option value="73c">St. Francis Lowlands</option>
+                    <option value="73d">Northern Backswamps</option>
+                    <option value="73e">Grand Prairie</option>
+                    <option value="73f">Western Lowlands Holocene Meander Belts</option>
+                    <option value="73g">Western Lowlands Pleistocene Valley Trains</option>
+                    <option value="73h">Arkansas/Ouachita River Holocene Meander Belts</option>
+                    <option value="73i">Arkansas/Ouachita River Backswamps</option>
+                    <option value="73j">Macon Ridge</option>
+                </optgroup>
+                <optgroup label="Mississippi Valley Loess Plains">
+                    <option value="74a">Bluff Hills</option>
+                </optgroup>
+            </select>
+        </fieldset>
+
+
+<!-- Brief Cultural History-->
+
+
+        <fieldset>
+            <Legend>Brief Cultural History</Legend>
+            <select name="BCH_region" id="BCH_region">
+                <option value="BCH_ozarks">Ozarks</option>
+                <option value="BCH_ARV">Arkansas River Valley</option>
+                <option value="BCH_northeast">Northeast Arkansas</option>
+                <option value="BCH_southeast">Southeast Arkansas</option>
+                <option value="BCH_southwest">Southwest Arkansas</option>
+            </select>
+        </fieldset>
+
+        <div>
+            <input type="checkbox" id="trail_of_tears" name="trail_of_tears" value="trail_of_tears">
+            <label for="trail_of_tears">APE Within 1 Mile of Trail of Tears</label>
+        </div>
+
+        <fieldset>
+            <select name="county" id="county">
+                <option value="county_">Arkansas</option>
+                <option value="county_">Ashley</option>
+                <option value="county_">Baxter</option>
+                <option value="county_">Benton</option>
+                <option value="county_">Boone</option>
+                <option value="county_">Bradley</option>
+                <option value="county_">Calhoun</option>
+                <option value="county_">Carroll</option>
+                <option value="county_">Chicot</option>
+                <option value="county_">Clark</option>
+                <option value="county_">Clay</option>
+                <option value="county_">Cleburne</option>
+                <option value="county_">Cleveland</option>
+                <option value="county_">Columbia</option>
+                <option value="county_">Conway</option>
+                <option value="county_">Craighead</option>
+                <option value="county_">Crawford</option>
+                <option value="county_">Crittenden</option>
+                <option value="county_">Cross</option>
+                <option value="county_">Dallas</option>
+                <option value="county_">Desha</option>
+                <option value="county_">Drew</option>
+                <option value="county_">Faulkner</option>
+                <option value="county_">Franklin</option>
+                <option value="county_">Fulton</option>
+                <option value="county_">Garland</option>
+                <option value="county_">Grant</option>
+                <option value="county_">Greene</option>
+                <option value="county_">Hempstead</option>
+                <option value="county_">Hot Spring</option>
+                <option value="county_">Howard</option>
+                <option value="county_">Independence</option>
+                <option value="county_">Izard</option>
+                <option value="county_">Jackson</option>
+                <option value="county_">Jefferson</option>
+                <option value="county_">Johnson</option>
+                <option value="county_">Lafayette</option>
+                <option value="county_">Lawrence</option>
+                <option value="county_">Lee</option>
+                <option value="county_">Lincoln</option>
+                <option value="county_">Little River</option>
+                <option value="county_">Logan</option>
+                <option value="county_">Lonoke</option>
+                <option value="county_">Madison</option>
+                <option value="county_">Marion</option>
+                <option value="county_">Miller</option>
+                <option value="county_">Mississippi</option>
+                <option value="county_">Monroe</option>
+                <option value="county_">Montgomery</option>
+                <option value="county_">Nevada</option>
+                <option value="county_">Newton</option>
+                <option value="county_">Ouachita</option>
+                <option value="county_">Perry</option>
+                <option value="county_">Phillips</option>
+                <option value="county_">Pike</option>
+                <option value="county_">Poinsett</option>
+                <option value="county_">Polk</option>
+                <option value="county_">Pope</option>
+                <option value="county_">Prairie</option>
+                <option value="county_">Pulaski</option>
+                <option value="county_">Randolph</option>
+                <option value="county_">Saint Francis</option>
+                <option value="county_">Saline</option>
+                <option value="county_">Scott</option>
+                <option value="county_">Searcy</option>
+                <option value="county_">Sebastian</option>
+                <option value="county_">Sevier</option>
+                <option value="county_">Sharp</option>
+                <option value="county_">Stone</option>
+                <option value="county_">Union</option>
+                <option value="county_">Van Buren</option>
+                <option value="county_">Washington</option>
+                <option value="county_">White</option>
+                <option value="county_">Woodruff</option>
+                <option value="county_">Yell</option>
+            </select>
+        </fieldset>
+
+<!-- Background Research-->
+        <fieldset>
+        <Legend>Background Research</Legend>
+            
+<!--AMASDA Sites dropdown to output content in Abstract/Intro/SumAndRec-->
+
+        
+            <select name="AMASDA_sites" id="AMASDA_sites">
+                <option value="sites_within_1_mile_yes">Sites Within 1 Mile</option>
+                <option value="sites_within_1_mile_no">No Sites Within 1 Mile</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <select name="AMASDA_projects" id="AMASDA_projects">
+                <option value="projects_within_1_mile_yes">Projects Within 1 Mile</option>
+                <option value="projects_within_1_mile_no">No Projects Within 1 Mile</option>
+            </select>
+        </fieldset>
+
+<!--Historic Properties dropdown to output content in Abstract/Intro/SumAndRec-->
+
+        <fieldset>
+            <select name="historic_properties" id="historic_properties">
+                <optgroup label="Cell Tower Historic Properties">
+                    <option value="cell_tower_hp_yes">Historic Properties within Visual APE</option>
+                    <option value="cell_tower_hp_no">No Historic Properties within Visual APE</option>
+                </optgroup>
+                <optgroup label="Generic Project Historic Properties">
+                    <option value="generic_hp_yes">Historic Properties in/near APE</option>
+                    <option value="generic_hp_no">No Historic Properties in/near APE</option>
+                </optgroup>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <select name="GLO_improvements" id="GLO_improvements">
+                <optgroup label="GLO_With_Improvements">
+                    <option value="landowner_yes">There is a GLO Landowner</option>
+                    <option value="landowner_no">There are no GLO Landowners</option>
+                </optgroup>
+                <optgroup label="GLO_Without_Improvements">
+                    <option value="landowner_yes">There is a GLO Landowner</option>
+                    <option value="landowner_no">There are no GLO Landowners</option>
+                </optgroup>
+            </select>
+            <select name="Survey_maps_aerial" id="Survey_maps_aerial">
+                <option value="improvements_yes">Survey Maps and/or Aerials Show Previous Improvements</option>
+                <option value="improvements_no">There are no Previous Improvements</option>
+            </select>
+        </fieldset>
+
+        <button type="submit">Submit Request</button>
+        
+
+    </form>
+
+<audio src="/audio/scape-main.mp3" autoplay></audio>
+
+</body>
+</html>
