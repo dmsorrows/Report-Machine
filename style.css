@@ -22,14 +22,20 @@ h1 {
 form {
     /* Center the form on the page */
     margin: 0 auto;
-    width: 500px;
+    width: 400px;
     /* Form outline */
     padding: 1em;
     border: 4px solid rgb(0, 0, 0);
     border-radius: 1em;
     background-color: rgb(250, 235, 215, 0.3);
     position: relative;
-    top: 2rem;
+    top: 3rem;
+}
+
+fieldset {
+    
+  border: 0;
+
 }
 
 legend {
@@ -41,15 +47,19 @@ legend {
 }
 
 select {
-    font: 12px sans-serif;
+    
+    box-shadow: inset 1px 1px 3px #ccc;
+    border-radius: 5px;
+    font: 14px "Times New Roman";
 
-    /* Uniform text field size */
+    /* Uniform text field size */ 
     width: 300px;
     box-sizing: border-box;
-    margin: 10px;
-  
+    margin: 4px 8px 4px 40px;
+    padding: 2px;
     /* Match form field borders */
     border: 1px solid #999;
+
 }
 
 

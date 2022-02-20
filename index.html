@@ -11,20 +11,57 @@
 
     <h1>Welcome Adventurer... To the FEA Report Dungeon!</h1>
 
-    <form action="/index.html" method="post">
+    <form action="/index.html" method="get">
  
         <!-- Abstract/Introduction/Summary and Recommendations -->
+        <fieldset>
+            <legend>Abs/Intro/Field n Lab Methods/SumRec</legend>
+            <select name="cell_tower_AISR" id="cell_tower_AISR">
+            <option value="" disabled selected>Select a Project and Results Type</option>
+                <optgroup label="Cell Tower (Negative Findings)">
+                    <option value="cell_tower_neg_monopole">Monopole</option>
+                    <option value="cell_tower_neg_area_easement">Lease Area with Easement</option>
+                    <option value="cell_tower_neg_area_noeasement">Lease Area without Easement</option>
+                    <option value="cell_tower_neg_area_anchor">Lease Area with Easement and Anchor Points</option>
+                </optgroup>
+                <optgroup label="Cell Tower (Positive Findings with Site)">
+                    <option value="cell_tower_pos_site_monopole">Monopole</option>
+                    <option value="cell_tower_pos_site_area_easement">Lease Area with Easement</option>
+                    <option value="cell_tower_pos_site_area_noeasement">Lease Area without Easement</option>
+                    <option value="cell_tower_pos_site_area_anchor">Lease Area with Easement and Anchor Points</option>
+                </optgroup>
+                <optgroup label="Cell Tower (Positive Findings without a Site)">
+                    <option value="cell_tower_pos_monopole">Monopole</option>
+                    <option value="cell_tower_pos_area_easement">Lease Area with Easement</option>
+                    <option value="cell_tower_pos_area_noeasement">Lease Area without Easement</option>
+                    <option value="cell_tower_pos_area_anchor">Lease Area with Easement and Anchor Points</option>
+                </optgroup>
+                <optgroup label="Generic Project (Negative Findings)">
+                    <option value="generic_neg_polygon">Polygon</option>
+                    <option value="generic_neg_corridor_boundary">Corridor with Defined Boundary</option>
+                    <option value="generic_neg_corridor_noboundary">Corridor with Defined Boundary</option>
+                </optgroup>
+                <optgroup label="Generic Project (Positive Findings with Site)">
+                    <option value="generic_pos_site_polygon">Polygon</option>
+                    <option value="generic_pos_site_corridor_boundary">Corridor with Defined Boundary</option>
+                    <option value="generic_pos_site_corridor_noboundary">Corridor with Defined Boundary</option>
+                </optgroup>
+                <optgroup label="Generic Project (Positive Findings without Site)">
+                    <option value="generic_pos_polygon">Polygon</option>
+                    <option value="generic_pos_corridor_boundary">Corridor with Defined Boundary</option>
+                    <option value="generic_pos_corridor_noboundary">Corridor with Defined Boundary</option>
+                </optgroup>
+            </select>
+        </fieldset>
 
-        <legend>Abstract/Introduction/Field and Lab Methods/Summary and Recommendations</legend>
-        <select name="cell_tower_AISR" id="cell_tower_AISR">Cell Tower Report</select>
-        <select name="generic_AISR" id="generic_AISR">Generic Report</select>
 
 <!-- Environmental Setting-->
+
+
         <fieldset>
         <legend>Environmental Setting</legend>
-
-   
             <select name="Ecoregions" id="ecoregions">
+                <option value="" disabled selected>Select an Ecoregion</option>
                 <optgroup label="South Central Plains">
                     <option value="35a">Tertiary Uplands</option>
                     <option value="35b">Floodplains and Low Terraces</option>
@@ -81,6 +118,7 @@
         <fieldset>
             <Legend>Brief Cultural History</Legend>
             <select name="BCH_region" id="BCH_region">
+            <option value="" disabled selected>Select a Brief Cultural History Region</option>
                 <option value="BCH_ozarks">Ozarks</option>
                 <option value="BCH_ARV">Arkansas River Valley</option>
                 <option value="BCH_northeast">Northeast Arkansas</option>
@@ -91,11 +129,12 @@
 
         <div>
             <input type="checkbox" id="trail_of_tears" name="trail_of_tears" value="trail_of_tears">
-            <label for="trail_of_tears">APE Within 1 Mile of Trail of Tears</label>
+            <label for="trail_of_tears">APE <strong>IS</strong> Within 1 Mile of Trail of Tears</label>
         </div>
 
         <fieldset>
             <select name="county" id="county">
+                <option value="" disabled selected>Select a County History</option>
                 <option value="county_">Arkansas</option>
                 <option value="county_">Ashley</option>
                 <option value="county_">Baxter</option>
@@ -174,23 +213,27 @@
             </select>
         </fieldset>
 
+
 <!-- Background Research-->
+
+
         <fieldset>
         <Legend>Background Research</Legend>
             
 <!--AMASDA Sites dropdown to output content in Abstract/Intro/SumAndRec-->
 
-        
             <select name="AMASDA_sites" id="AMASDA_sites">
-                <option value="sites_within_1_mile_yes">Sites Within 1 Mile</option>
-                <option value="sites_within_1_mile_no">No Sites Within 1 Mile</option>
+                <option value="" disabled selected>Select an AMASDA Site Option</option>
+                <option value="sites_within_1_mile_yes">There are Sites Within 1 Mile</option>
+                <option value="sites_within_1_mile_no">There are No Sites Within 1 Mile</option>
             </select>
         </fieldset>
 
         <fieldset>
             <select name="AMASDA_projects" id="AMASDA_projects">
-                <option value="projects_within_1_mile_yes">Projects Within 1 Mile</option>
-                <option value="projects_within_1_mile_no">No Projects Within 1 Mile</option>
+            <option value="" disabled selected>Select an AMASDA Project Option</option>
+                <option value="projects_within_1_mile_yes">There are Projects Within 1 Mile</option>
+                <option value="projects_within_1_mile_no">There are No Projects Within 1 Mile</option>
             </select>
         </fieldset>
 
@@ -198,43 +241,46 @@
 
         <fieldset>
             <select name="historic_properties" id="historic_properties">
+            <option value="" disabled selected>Select a Historic Property Option</option>
                 <optgroup label="Cell Tower Historic Properties">
-                    <option value="cell_tower_hp_yes">Historic Properties within Visual APE</option>
-                    <option value="cell_tower_hp_no">No Historic Properties within Visual APE</option>
+                    <option value="cell_tower_hp_yes">There are Historic Properties within Visual APE</option>
+                    <option value="cell_tower_hp_no">There are No Historic Properties within Visual APE</option>
                 </optgroup>
                 <optgroup label="Generic Project Historic Properties">
-                    <option value="generic_hp_yes">Historic Properties in/near APE</option>
-                    <option value="generic_hp_no">No Historic Properties in/near APE</option>
+                    <option value="generic_hp_yes">There are Historic Properties in/near APE</option>
+                    <option value="generic_hp_no">There are No Historic Properties in/near APE</option>
                 </optgroup>
             </select>
         </fieldset>
 
         <fieldset>
             <select name="GLO_improvements" id="GLO_improvements">
-                <optgroup label="GLO_With_Improvements">
-                    <option value="landowner_yes">There is a GLO Landowner</option>
-                    <option value="landowner_no">There are no GLO Landowners</option>
+            <option value="" disabled selected>Select a GLO Map Option</option>
+                <optgroup label="GLO Map shows Improvements in APE">
+                    <option value="landowner_yes">There is Landowner Information</option>
+                    <option value="landowner_no">There is NO Landowner Information</option>
                 </optgroup>
-                <optgroup label="GLO_Without_Improvements">
-                    <option value="landowner_yes">There is a GLO Landowner</option>
-                    <option value="landowner_no">There are no GLO Landowners</option>
+                <optgroup label="GLO Map doesn't show Improvements in APE">
+                    <option value="landowner_yes">There is Landowner Information</option>
+                    <option value="landowner_no">There is NO Landowner Information</option>
                 </optgroup>
             </select>
             <select name="Survey_maps_aerial" id="Survey_maps_aerial">
+            <option value="" disabled selected>Select a USGS Map/Aerial Option</option>
                 <option value="improvements_yes">Survey Maps and/or Aerials Show Previous Improvements</option>
-                <option value="improvements_no">There are no Previous Improvements</option>
+                <option value="improvements_no">There are NO Previous Improvements</option>
             </select>
         </fieldset>
 
         <button type="submit">Submit Request</button>
-        
+
     </form>
 
 
 <!--------------Special Effects!--------------->
 
 
-<audio src="/audio/scape-main.mp3" autoplay></audio>
+<audio src="/audio/scape-main.mp3"></audio>
 
 <div class="fire">
     <div class="particle"></div>
