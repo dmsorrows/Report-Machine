@@ -9,7 +9,7 @@
 </head>
 <body>
 
-    <h1>Welcome Adventurer... To the FEA Report Dungeon!</h1>
+    <h1>Welcome Adventurer... To the FEA Report Dungeon</h1>
 
     <form action="/index.html" method="get">
  
@@ -39,17 +39,17 @@
                 <optgroup label="Generic Project (Negative Findings)">
                     <option value="generic_neg_polygon">Polygon</option>
                     <option value="generic_neg_corridor_boundary">Corridor with Defined Boundary</option>
-                    <option value="generic_neg_corridor_noboundary">Corridor with Defined Boundary</option>
+                    <option value="generic_neg_corridor_noboundary">Corridor without Defined Boundary</option>
                 </optgroup>
                 <optgroup label="Generic Project (Positive Findings with Site)">
                     <option value="generic_pos_site_polygon">Polygon</option>
                     <option value="generic_pos_site_corridor_boundary">Corridor with Defined Boundary</option>
-                    <option value="generic_pos_site_corridor_noboundary">Corridor with Defined Boundary</option>
+                    <option value="generic_pos_site_corridor_noboundary">Corridor without Defined Boundary</option>
                 </optgroup>
                 <optgroup label="Generic Project (Positive Findings without Site)">
                     <option value="generic_pos_polygon">Polygon</option>
                     <option value="generic_pos_corridor_boundary">Corridor with Defined Boundary</option>
-                    <option value="generic_pos_corridor_noboundary">Corridor with Defined Boundary</option>
+                    <option value="generic_pos_corridor_noboundary">Corridor without Defined Boundary</option>
                 </optgroup>
             </select>
         </fieldset>
@@ -128,8 +128,10 @@
         </fieldset>
 
         <div>
-            <input type="checkbox" id="trail_of_tears" name="trail_of_tears" value="trail_of_tears">
-            <label for="trail_of_tears">APE <strong>IS</strong> Within 1 Mile of Trail of Tears</label>
+            <label for="trail_of_tears">
+                <input type="checkbox" id="trail_of_tears" name="trail_of_tears" value="trail_of_tears">
+                <span>APE is Within 1 Mile of Trail of Tears</span>
+            </label>
         </div>
 
         <fieldset>
@@ -280,7 +282,7 @@
 <!--------------Special Effects!--------------->
 
 
-<audio src="/audio/scape-main.mp3"></audio>
+<audio src="/audio/scape-main.mp3" autoplay></audio>
 
 <div class="fire">
     <div class="particle"></div>

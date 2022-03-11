@@ -17,6 +17,7 @@ h1 {
     text-align: center;
     font-size: 3rem;
     color: antiquewhite;
+    font-family: "MedievalSharp";
 }
 
 form {
@@ -62,7 +63,11 @@ select {
 
 }
 
+input[type='checkbox'] {
 
+    margin-left: 3.5rem;
+
+}
 
 /* Flame! */
   
