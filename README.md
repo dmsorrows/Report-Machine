@@ -1,5 +1,6 @@
 # Report-Machine
 My Automated Report Template Generator 
+
 The purpose of this machine is to greatly hasten the technical report writing process.  
 
 
